@@ -25,6 +25,7 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       {!user && (
         <Button
           el="link"
+          href="/login"
           label="Login"
           appearance="primary"
           onClick={() => (window.location.href = '/login')}
